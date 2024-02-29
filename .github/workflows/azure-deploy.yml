@@ -48,7 +48,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }} # Set up a GitHub secret for Azure credentials
 
       - run: |
-          az group create -l westus -n ${{ github.event.inputs.resource-group-name }}
+          az group create -l eastus -n ${{ github.event.inputs.resource-group-name }}
 
       #   # Deploy Bicep file
       - name: deploy
